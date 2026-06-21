@@ -1,0 +1,14 @@
+SV001,Jamie Dang,triet@gmail.com,8.9,ACTIVE
+SV002,An Nguyen,an@email.com,9.0,ACTIVE
+SV003,Nguyet Tran,nguyet@email.com,10.0,ACTIVE
+SV004,Binh Le,binh@email.com,7.8,ACTIVE
+SV005,Linh Pham,linh@email.com,8.2,GRADUATED
+SV006,Tuan Vo,tuan@email.com,6.9,INACTIVE
+SV007,Hoa Do,hoa@email.com,9.5,ACTIVE
+SV008,Minh Hoang,minh@email.com,8.7,ACTIVE
+SV009,Thao Nguyen,thao@email.com,7.5,GRADUATED
+SV010,Duc Tran,duc@email.com,8.0,ACTIVE
+SV011,Quynh Le,quynh@email.com,9.8,ACTIVE
+SV012,Khanh Pham,khanh@email.com,6.5,INACTIVE
+SV013,Huy Nguyen,huy@email.com,7.2,ACTIVE
+SV014,Trang Vo,trang@email.com,8.4,GRADUATED
