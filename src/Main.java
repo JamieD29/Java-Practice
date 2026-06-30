@@ -21,7 +21,8 @@ public class Main {
             System.out.println("3. Delete Student");
             System.out.println("4. View All Students");
             System.out.println("5. View Student (ID)");
-            System.out.println("6. Exit");
+            System.out.println("6. View Statistics");
+            System.out.println("7. Exit");
             System.out.print("Choose: ");
             choice = input.nextInt();
             input.nextLine();
@@ -181,6 +182,34 @@ public class Main {
                     break;
                 }
                 case 6: {
+                    System.out.println("===== Statistics =====");
+
+
+                            System.out.println("1. Overall Statistics =====");
+                            System.out.println("Total Student: " + students.getTotalStudents());
+
+
+                            System.out.println("2. GPA Statistics =====");
+                            System.out.println("Highest GPA :" + students.getMaxGpa());
+                            System.out.println("Lowest GPA :" + students.getMinGpa());
+                            System.out.println("Average GPA :" + students.getAverageGpa());
+
+                    System.out.println("3. Status Statistics =====");
+                    System.out.println("Active :" + students.getStudentCountByStatus(StudentStatus.ACTIVE));
+                    System.out.println("Inactive :" + students.getStudentCountByStatus(StudentStatus.INACTIVE));
+                    System.out.println("Graduated :" + students.getStudentCountByStatus(StudentStatus.GRADUATED));
+
+                            System.out.println("4. Top Student =====");
+                            System.out.println("ID:" + students.getTopStudent().getId() + " " + "Name: " + students.getTopStudent().getName() + " " + "GPA: " + students.getTopStudent().getGpa());
+
+                            System.out.println("5. Excellent Students ====");
+                            students.getExcellentStudents().stream().forEach(student -> {
+                                System.out.println("ID:" + student.getId() + " " + "Name: " + student.getName());
+                            });
+
+                    break;
+                }
+                case 7: {
                     isExit = true;
                     students.saveToFile();
                     System.out.println("**** Exit Program ***");
